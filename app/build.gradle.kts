@@ -47,6 +47,7 @@ android {
 dependencies {
     implementation(libs.navigation.compose)
     implementation(libs.lifecycle.viewmodel.ktx)
+    implementation(libs.lifecycle.viewmodel.compose)
 
     implementation(libs.coroutines.android)
     implementation(libs.coroutines.core)
@@ -58,10 +59,16 @@ dependencies {
 
     implementation(libs.moshi.core)
     implementation(libs.moshi.kotlin)
+    implementation(libs.androidx.material3)
+    ksp(libs.moshi.codegen)
 
     implementation(libs.hilt.navigation.compose)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+
+    implementation(libs.retrofit.core)
+    implementation(libs.retrofit.moshi)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
