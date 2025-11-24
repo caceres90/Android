@@ -6,5 +6,5 @@ import retrofit2.http.GET
 
 interface PokemonApi {
     @GET(value = "pokemon")
-    suspend fun fetchPokemons(): PokemonListResponseDto
+    suspend fun getPokemons(): PokemonListResponseDto
 }
